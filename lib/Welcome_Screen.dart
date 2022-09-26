@@ -40,13 +40,43 @@ class WelcomeScreen extends StatelessWidget {
               ),
               SizedBox(height: 40),
               TextFormField(
-                keyboardType: TextInputType.emailAddress,
+                
+                keyboardType: TextInputType.visiblePassword,
                 decoration: InputDecoration(
                     labelText: 'Enter Password',
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20)),
-                    prefixIcon: Icon(Icons.password)),
-              )
+                    prefixIcon: Icon(Icons.lock),
+                    suffixIcon: Icon(Icons.remove_red_eye)),
+              ),
+              SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('Forget Password?'),
+                  ),
+                ],
+              ),
+              SizedBox(height: 20),
+              Container(
+                height: 60,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  gradient: LinearGradient(
+                    colors: [Colors.red, Colors.amber],
+                  ),
+                ),
+                child: MaterialButton(
+                  onPressed: () {},
+                  child: Text(
+                    'LOGIN',
+                    style: TextStyle(fontSize: 25, color: Colors.white),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
