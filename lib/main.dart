@@ -1,3 +1,4 @@
+import 'package:cardd/Login_Screen.dart';
 import 'package:cardd/Welcome_Screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.lime,
       ),
       routes: {
-        '/': (context) => const WelcomeScreen(),
+        '/': (context) => const LoginScreen(),
+        'WelcomeScreen': (context) => const WelcomeScreen(),
       },
     );
   }
