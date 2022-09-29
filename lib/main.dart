@@ -1,5 +1,5 @@
-import 'package:cardd/Login_Screen.dart';
-import 'package:cardd/Welcome_Screen.dart';
+import 'package:cardd/pages/Login_Screen.dart';
+import 'package:cardd/pages/Welcome_Screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
