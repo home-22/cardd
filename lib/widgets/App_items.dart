@@ -14,9 +14,9 @@ class AppItems extends StatelessWidget {
         children: [
           for (int i = 1; i < 5; i++)
             Container(
-              margin: EdgeInsets.only(top: 10, bottom: 10, left: 10),
-              height: 100,
-              width: 290,
+              margin: const EdgeInsets.only(top: 10, bottom: 10, left: 10),
+              height: 120,
+              width: 300,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
                 color: Colors.white,

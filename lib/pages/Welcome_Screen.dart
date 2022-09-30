@@ -1,4 +1,5 @@
 import 'package:cardd/widgets/App_items.dart';
+import 'package:cardd/widgets/Items_list.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -77,7 +78,37 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              AppItems()
+              AppItems(),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                child: Row(
+                  children: [
+                    Text(
+                      'List',
+                      style: TextStyle(
+                          fontSize: 22,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Spacer(),
+                    Icon(
+                      Icons.add_chart_sharp,
+                      color: Colors.blue,
+                      size: 30,
+                    ),
+                    SizedBox(width: 10),
+                    Icon(
+                      Icons.share_rounded,
+                      color: Colors.blue,
+                      size: 30,
+                    )
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric( vertical: 10),
+                child: ItemsList(),
+              ),
             ],
           ),
         ),
