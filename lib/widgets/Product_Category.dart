@@ -1,22 +1,18 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class AppItems extends StatelessWidget {
-  const AppItems({Key? key}) : super(key: key);
+class ProductCategory extends StatelessWidget {
+  const ProductCategory({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
+      scrollDirection: Axis.vertical,
+      child: Column(
         children: [
-          for (int i = 1; i < 5; i++)
+          for (int i = 1; i < 7; i++)
             Container(
-              margin: const EdgeInsets.only(top: 10, bottom: 10, left: 10),
+              margin: EdgeInsets.all(10),
               height: 120,
-              width: 300,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
                 color: Colors.white,
@@ -24,7 +20,7 @@ class AppItems extends StatelessWidget {
                   BoxShadow(
                     blurRadius: 5,
                     spreadRadius: 1,
-                  ),
+                  )
                 ],
               ),
             ),

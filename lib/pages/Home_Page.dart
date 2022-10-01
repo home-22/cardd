@@ -1,5 +1,7 @@
-import 'package:cardd/widgets/App_items.dart';
-import 'package:cardd/widgets/Items_list.dart';
+import 'package:cardd/widgets/Product_Card.dart';
+import 'package:cardd/widgets/Product_Category.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -78,7 +80,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              AppItems(),
+              ProductCard(),
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 child: Row(
@@ -106,12 +108,40 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric( vertical: 10),
-                child: ItemsList(),
+                padding: EdgeInsets.symmetric(vertical: 10),
+                child: ProductCategory(),
               ),
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        height: 40,
+        color: Colors.deepOrangeAccent,
+        onTap: (value) {},
+        backgroundColor: Colors.white,
+        items: const [
+          Icon(
+            Icons.home,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            CupertinoIcons.cart_badge_plus,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.message,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.person_rounded,
+            size: 30,
+            color: Colors.white,
+          )
+        ],
       ),
     );
   }
