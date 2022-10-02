@@ -1,7 +1,6 @@
 import 'package:cardd/widgets/Product_Card.dart';
 import 'package:cardd/widgets/Product_Category.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -20,7 +19,7 @@ class WelcomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       child: Icon(
                         Icons.segment_sharp,
                         size: 30,
@@ -28,14 +27,14 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       height: 40,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.white),
                       child: Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.search,
                             size: 30,
                             color: Colors.blue,
@@ -47,7 +46,7 @@ class WelcomeScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       child: Icon(
                         Icons.notifications,
                         size: 30,
@@ -115,32 +114,43 @@ class WelcomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: CurvedNavigationBar(
-        height: 40,
-        color: Colors.deepOrangeAccent,
+      bottomNavigationBar: BottomNavigationBar(
         onTap: (value) {},
-        backgroundColor: Colors.white,
+        iconSize: 30,
+        unselectedFontSize: 10,
+        selectedFontSize: 10,
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.blueGrey,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        elevation: 0,
         items: const [
-          Icon(
-            Icons.home,
-            size: 30,
-            color: Colors.white,
+          BottomNavigationBarItem(
+            label: '',
+            icon: Icon(Icons.home),
           ),
-          Icon(
-            CupertinoIcons.cart_badge_plus,
-            size: 30,
-            color: Colors.white,
+          BottomNavigationBarItem(
+            label: '',
+            icon: Icon(
+              Icons.location_on,
+            ),
           ),
-          Icon(
-            Icons.message,
-            size: 30,
-            color: Colors.white,
+          BottomNavigationBarItem(
+            label: '',
+            icon: Icon(
+              Icons.add_shopping_cart_sharp,
+            ),
           ),
-          Icon(
-            Icons.person_rounded,
-            size: 30,
-            color: Colors.white,
-          )
+          BottomNavigationBarItem(
+            label: '',
+            icon: Icon(Icons.favorite),
+          ),
+          BottomNavigationBarItem(
+            label: '',
+            icon: Icon(Icons.person),
+          ),
         ],
       ),
     );

@@ -20,7 +20,7 @@ class ProductCategory extends StatelessWidget {
                   BoxShadow(
                     blurRadius: 5,
                     spreadRadius: 1,
-                  )
+                  ),
                 ],
               ),
             ),

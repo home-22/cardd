@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
@@ -15,6 +17,7 @@ class ProductCard extends StatelessWidget {
               height: 120,
               width: 300,
               decoration: BoxDecoration(
+                image: DecorationImage(image: AssetImage('images/10.jpg')),
                 borderRadius: BorderRadius.circular(100),
                 color: Colors.white,
                 boxShadow: [
