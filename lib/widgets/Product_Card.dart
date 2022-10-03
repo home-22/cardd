@@ -14,18 +14,23 @@ class ProductCard extends StatelessWidget {
           for (int i = 1; i < 5; i++)
             Container(
               margin: const EdgeInsets.only(top: 10, bottom: 10, left: 10),
-              height: 120,
-              width: 300,
+              height: 110,
+              width: 250,
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage('images/10.jpg')),
                 borderRadius: BorderRadius.circular(100),
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
-                    blurRadius: 5,
+                    blurRadius: 1,
                     spreadRadius: 1,
                   ),
                 ],
+              ),
+              child: Image.asset(
+                'images/2.png',
+                height: 120,
+                width: 150,
+                fit: BoxFit.contain,
               ),
             ),
         ],

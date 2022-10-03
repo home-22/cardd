@@ -9,6 +9,27 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.lime[100],
+        elevation: 0,
+        leading: const Padding(
+          padding: EdgeInsets.all(10),
+          child: Icon(
+            Icons.location_on,
+            size: 25,
+            color: Colors.blue,
+          ),
+        ),
+        centerTitle: true,
+        title: const Text(
+          'Bosna and Hercegovina Sarajevo, 1A',
+          style: TextStyle(
+            fontSize: 19,
+            color: Colors.blue,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+      ),
       backgroundColor: Colors.lime[100],
       body: SafeArea(
         child: SingleChildScrollView(

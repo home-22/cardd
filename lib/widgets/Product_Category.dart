@@ -11,7 +11,7 @@ class ProductCategory extends StatelessWidget {
         children: [
           for (int i = 1; i < 7; i++)
             Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               height: 120,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
