@@ -1,5 +1,6 @@
 import 'package:cardd/pages/Card_Page.dart';
 import 'package:cardd/pages/Login_Screen.dart';
+import 'package:cardd/pages/Settings_Page.dart';
 import 'package:cardd/widgets/Shopping_Card.dart';
 
 import 'package:flutter/material.dart';
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const LoginScreen(),
         'WelcomeScreen': (context) => const WelcomeScreen(),
-        'ShoppingCard': (context) => ShoppingCard(),
+        'ShoppingCard': (context) => const ShoppingCard(),
+        'SettingsPage': (context) => const Settings_Page(),
       },
     );
   }

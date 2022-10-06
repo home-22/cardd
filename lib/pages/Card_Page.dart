@@ -84,10 +84,10 @@ class WelcomeScreen extends StatelessWidget {
                     child: Text(
                       'Akcija',
                       style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          ),
+                        color: Colors.blue,
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   Padding(
@@ -137,7 +137,9 @@ class WelcomeScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        onTap: (value) {},
+        onTap: (value) {
+          Navigator.pushNamed(context, 'SettingsPage');
+        },
         iconSize: 30,
         unselectedFontSize: 10,
         selectedFontSize: 10,
