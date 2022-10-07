@@ -9,14 +9,14 @@ class SettingsProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
-      margin: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
+      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
       height: 50,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(40), color: Colors.grey),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
+        children: const [
           Text(
             'Neki text',
             style: TextStyle(

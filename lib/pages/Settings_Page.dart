@@ -1,10 +1,9 @@
 import 'package:cardd/widgets/Settings_Profile.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class Settings_Page extends StatelessWidget {
-  const Settings_Page({Key? key}) : super(key: key);
+
+class SettingsPage extends StatelessWidget {
+  const SettingsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,16 +11,32 @@ class Settings_Page extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.lime[100],
         elevation: 0,
-        title: Text(
-          'Settings',
-          style: TextStyle(
-              fontSize: 20, color: Colors.grey, fontWeight: FontWeight.w500),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black45,
+            size: 30,
+          ),
+        ),
+        title: const Text(
+          'Settings profile',
+          style: TextStyle(fontSize: 21, color: Colors.black45),
         ),
       ),
       body: Container(
+          padding: const EdgeInsets.all(20),
           color: Colors.lime[100],
           child: Column(
-            children: [SettingsProfile(), SettingsProfile(), SettingsProfile()],
+            children: const [
+              SettingsProfile(),
+              SettingsProfile(),
+              SettingsProfile(),
+              SettingsProfile(),
+              SettingsProfile(),
+            ],
           )),
     );
   }

@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const LoginScreen(),
         'WelcomeScreen': (context) => const WelcomeScreen(),
         'ShoppingCard': (context) => const ShoppingCard(),
-        'SettingsPage': (context) => const Settings_Page(),
+        'SettingsPage': (context) => const SettingsPage(),
       },
     );
   }

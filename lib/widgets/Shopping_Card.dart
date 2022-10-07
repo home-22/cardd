@@ -16,12 +16,12 @@ class ShoppingCard extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_ios,
             color: Colors.blue,
           ),
         ),
-        title: Text(
+        title: const Text(
           'Kupovina',
           style: TextStyle(
               fontSize: 22, color: Colors.blue, fontWeight: FontWeight.w500),
@@ -40,7 +40,7 @@ class ShoppingCard extends StatelessWidget {
               ],
             ),
             Column(
-              children: [Text('Neki text')],
+              children: const [Text('Neki text')],
             )
           ],
         ),
