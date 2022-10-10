@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class ShoppingCard extends StatelessWidget {
@@ -8,41 +6,74 @@ class ShoppingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.lime[100],
-        centerTitle: true,
-        elevation: 0,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Icon(
-            Icons.arrow_back_ios,
-            color: Colors.blue,
-          ),
-        ),
-        title: const Text(
-          'Kupovina',
-          style: TextStyle(
-              fontSize: 22, color: Colors.blue, fontWeight: FontWeight.w500),
-        ),
-      ),
-      body: Container(
-        color: Colors.lime[100],
-        child: Column(
-          children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 50,
-                  child: Image.asset('images/3.png'),
-                ),
-              ],
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(children: [
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Icon(Icons.arrow_back_ios),
+                  ),
+                ],
+              ),
             ),
-            Column(
-              children: const [Text('Neki text')],
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.34,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Container(
+                    width: double.infinity,
+                    height: 220,
+                    margin: const EdgeInsets.only(bottom: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.deepOrangeAccent,
+                      borderRadius: BorderRadius.circular(70),
+                    ),
+                  ),
+                  Image.asset(
+                    'images/3.png',
+                    height: 300,
+                    width: 300,
+                    fit: BoxFit.contain,
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.35,
+              width: double.infinity,
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(35),
+                  topRight: Radius.circular(35),
+                ),
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Opis Artikla',
+                        style: TextStyle(fontSize: 28, color: Colors.blue),
+                      ),
+                      Text(
+                        '\$455',
+                        style: TextStyle(fontSize: 28, color: Colors.blue),
+                      )
+                    ],
+                  )
+                ],
+              ),
             )
-          ],
+          ]),
         ),
       ),
     );
