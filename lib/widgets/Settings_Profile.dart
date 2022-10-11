@@ -18,7 +18,7 @@ class SettingsProfile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: const [
           Text(
-            'Neki text',
+            '',
             style: TextStyle(
               fontSize: 18,
             ),

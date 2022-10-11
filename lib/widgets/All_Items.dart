@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class AllItems extends StatelessWidget {
   const AllItems({Key? key}) : super(key: key);
@@ -16,11 +13,11 @@ class AllItems extends StatelessWidget {
       children: [
         for (int i = 1; i < 5; i++)
           Container(
-            padding: const EdgeInsets.only(left: 15, right: 15),
+            padding: const EdgeInsets.only(left: 10, right: 10),
             margin: const EdgeInsets.all(5),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(40),
               boxShadow: [
                 BoxShadow(
                   color: Colors.amber.withOpacity(0.5),
@@ -29,19 +26,22 @@ class AllItems extends StatelessWidget {
                 ),
               ],
             ),
-            child: Column(
+            child: Row(
               children: [
-                InkWell(
-                  onTap: () {},
-                  child: Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: Image.asset(
-                      'images/1.png',
-                      width: 100,
-                      height: 80,
-                    ),
+                const Padding(
+                  padding: EdgeInsets.all(5),
+                  child: CircleAvatar(
+                    radius: 25,
+                    backgroundImage: AssetImage('images/3.png'),
                   ),
                 ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+                    Text('Redmi Note 11'),
+                  ],
+                )
               ],
             ),
           ),

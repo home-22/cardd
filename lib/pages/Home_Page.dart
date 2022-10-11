@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:cardd/widgets/All_Items.dart';
+import 'package:cardd/widgets/Home_Product.dart';
 import 'package:cardd/widgets/Product_Card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -145,6 +146,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+              HomeProduct()
             ],
           ),
         ),
