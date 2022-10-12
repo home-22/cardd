@@ -28,20 +28,14 @@ class AllItems extends StatelessWidget {
             ),
             child: Row(
               children: [
-                const Padding(
-                  padding: EdgeInsets.all(5),
-                  child: CircleAvatar(
-                    radius: 25,
-                    backgroundImage: AssetImage('images/3.png'),
-                  ),
-                ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text('Redmi Note 11'),
-                  ],
-                )
+                Padding(
+                    padding: const EdgeInsets.all(5),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(30),
+                      child: Image.asset(
+                        'images/2.png',
+                      ),
+                    )),
               ],
             ),
           ),

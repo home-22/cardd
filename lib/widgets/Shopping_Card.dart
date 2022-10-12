@@ -48,8 +48,8 @@ class ShoppingCard extends StatelessWidget {
             Container(
               height: MediaQuery.of(context).size.height * 0.35,
               width: double.infinity,
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(35),
                   topRight: Radius.circular(35),
@@ -59,9 +59,9 @@ class ShoppingCard extends StatelessWidget {
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                    children: const [
                       Text(
-                        'Opis Artikla',
+                        'See All',
                         style: TextStyle(fontSize: 28, color: Colors.blue),
                       ),
                       Text(

@@ -60,7 +60,7 @@ class CardScreen extends StatelessWidget {
                             color: Colors.blue,
                           ),
                           SizedBox(
-                            width: 250,
+                            width: 290,
                             child: TextFormField(),
                           ),
                         ],

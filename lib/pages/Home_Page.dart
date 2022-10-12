@@ -3,7 +3,7 @@
 import 'package:cardd/widgets/All_Items.dart';
 import 'package:cardd/widgets/Home_Product.dart';
 import 'package:cardd/widgets/Product_Card.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(10),
                     child: Text(
-                      'Akcija',
+                      'New new',
                       style: TextStyle(
                         color: Colors.blue,
                         fontSize: 20,
@@ -111,7 +111,7 @@ class HomePage extends StatelessWidget {
                 child: Row(
                   children: [
                     const Text(
-                      'Kategorije',
+                      'New ',
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.blue,
@@ -127,7 +127,7 @@ class HomePage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     child: Text(
-                      'Slicni prizvodi',
+                      'New New new',
                       style: TextStyle(
                           fontSize: 18,
                           color: Colors.blue,
@@ -137,7 +137,7 @@ class HomePage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     child: Text(
-                      'Opis vise',
+                      'See All',
                       style: TextStyle(
                           fontSize: 15,
                           color: Colors.blue,
@@ -146,7 +146,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
-              HomeProduct()
+              const HomeProduct()
             ],
           ),
         ),
