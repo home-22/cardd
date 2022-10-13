@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Card App',
-      theme: ThemeData(
-        primarySwatch: Colors.lime,
-      ),
+      theme: ThemeData(scaffoldBackgroundColor: const Color(0xFF0F111D)),
       routes: {
         '/': (context) => const HomePage(),
         'WelcomeScreen': (context) => const CardScreen(),

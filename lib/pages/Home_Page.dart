@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
 import 'package:cardd/widgets/All_Items.dart';
+import 'package:cardd/widgets/CustomNavBar.dart';
 import 'package:cardd/widgets/Home_Product.dart';
 import 'package:cardd/widgets/Product_Card.dart';
 
@@ -13,14 +14,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lime[100],
+        backgroundColor: const Color(0xFF0F111D),
         elevation: 0,
         leading: const Padding(
           padding: EdgeInsets.all(10),
           child: Icon(
             Icons.location_on,
             size: 25,
-            color: Colors.blue,
+            color: Colors.white,
           ),
         ),
         centerTitle: true,
@@ -28,12 +29,11 @@ class HomePage extends StatelessWidget {
           'Bosna and Hercegovina Sarajevo, 1A',
           style: TextStyle(
             fontSize: 19,
-            color: Colors.blue,
+            color: Colors.white,
             fontWeight: FontWeight.w500,
           ),
         ),
       ),
-      backgroundColor: Colors.lime[100],
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                       child: Icon(
                         Icons.segment_sharp,
                         size: 30,
-                        color: Colors.blue,
+                        color: Colors.white,
                       ),
                     ),
                     Container(
@@ -61,7 +61,7 @@ class HomePage extends StatelessWidget {
                           const Icon(
                             Icons.search,
                             size: 30,
-                            color: Colors.blue,
+                            color: Colors.white,
                           ),
                           SizedBox(
                             width: 250,
@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
                       child: Icon(
                         Icons.notifications_rounded,
                         size: 30,
-                        color: Colors.blue,
+                        color: Colors.white,
                       ),
                     ),
                   ],
@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
                     child: Text(
                       'New new',
                       style: TextStyle(
-                        color: Colors.blue,
+                        color: Colors.white,
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
@@ -99,7 +99,7 @@ class HomePage extends StatelessWidget {
                     child: Icon(
                       Icons.ios_share,
                       size: 30,
-                      color: Colors.blue,
+                      color: Colors.white,
                     ),
                   ),
                 ],
@@ -114,7 +114,7 @@ class HomePage extends StatelessWidget {
                       'New ',
                       style: TextStyle(
                           fontSize: 20,
-                          color: Colors.blue,
+                          color: Colors.white,
                           fontWeight: FontWeight.bold),
                     )
                   ],
@@ -130,7 +130,7 @@ class HomePage extends StatelessWidget {
                       'New New new',
                       style: TextStyle(
                           fontSize: 18,
-                          color: Colors.blue,
+                          color: Colors.white,
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -140,17 +140,18 @@ class HomePage extends StatelessWidget {
                       'See All',
                       style: TextStyle(
                           fontSize: 15,
-                          color: Colors.blue,
+                          color: Colors.white54,
                           fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
               ),
-              const HomeProduct()
+              const HomeProduct(),
             ],
           ),
         ),
       ),
+      bottomNavigationBar: const CustomNavBar(),
     );
   }
 }

@@ -136,47 +136,6 @@ class CardScreen extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        onTap: (value) {
-          Navigator.pushNamed(context, 'SettingsPage');
-        },
-        iconSize: 30,
-        unselectedFontSize: 10,
-        selectedFontSize: 10,
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.blueGrey,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.grey,
-        showUnselectedLabels: false,
-        showSelectedLabels: false,
-        elevation: 0,
-        items: const [
-          BottomNavigationBarItem(
-            label: '',
-            icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            label: '',
-            icon: Icon(
-              Icons.location_on,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: '',
-            icon: Icon(
-              Icons.add_shopping_cart_sharp,
-            ),
-          ),
-          BottomNavigationBarItem(
-            label: '',
-            icon: Icon(Icons.favorite),
-          ),
-          BottomNavigationBarItem(
-            label: '',
-            icon: Icon(Icons.person),
-          ),
-        ],
-      ),
     );
   }
 }
