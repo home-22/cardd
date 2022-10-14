@@ -21,7 +21,7 @@ class AllItems extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: Colors.amber.withOpacity(0.5),
-                  blurRadius: 5,
+                  blurRadius: 1,
                   spreadRadius: 1,
                 ),
               ],
@@ -33,7 +33,7 @@ class AllItems extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(30),
                       child: Image.asset(
-                        'images/2.png',
+                        'images/1.png',
                       ),
                     )),
               ],

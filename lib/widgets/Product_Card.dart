@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
@@ -30,7 +29,7 @@ class ProductCard extends StatelessWidget {
                   ],
                 ),
                 child: Image.asset(
-                  'images/2.png',
+                  'images/1.png',
                   height: 120,
                   width: 150,
                   fit: BoxFit.contain,

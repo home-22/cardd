@@ -18,7 +18,7 @@ class ProductCategory extends StatelessWidget {
                 color: Colors.white,
                 boxShadow: const [
                   BoxShadow(
-                    blurRadius: 5,
+                    blurRadius: 1,
                     spreadRadius: 1,
                   ),
                 ],

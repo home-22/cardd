@@ -1,4 +1,4 @@
-import 'package:cardd/pages/Card_Page.dart';
+import 'package:cardd/pages/Category_Page.dart';
 import 'package:cardd/pages/Home_Page.dart';
 import 'package:cardd/pages/Login_Page.dart';
 import 'package:cardd/pages/Settings_Page.dart';
@@ -20,9 +20,10 @@ class MyApp extends StatelessWidget {
       title: 'Card App',
       theme: ThemeData(scaffoldBackgroundColor: const Color(0xFF0F111D)),
       routes: {
-        '/': (context) => const HomePage(),
-        'WelcomeScreen': (context) => const CardScreen(),
+        '/': (context) => const LoginPage(),
+        'CategoryPage': (context) => const CategoryPage(),
         'ShoppingCard': (context) => const ShoppingCard(),
+        'HomePage': (context) => HomePage()
       },
     );
   }
