@@ -21,9 +21,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(scaffoldBackgroundColor: const Color(0xFF0F111D)),
       routes: {
         '/': (context) => const LoginPage(),
+        'HomePage': (context) => const HomePage(),
         'CategoryPage': (context) => const CategoryPage(),
         'ShoppingCard': (context) => const ShoppingCard(),
-        'HomePage': (context) => HomePage()
       },
     );
   }

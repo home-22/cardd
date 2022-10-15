@@ -22,7 +22,7 @@ class CustomNavBar extends StatelessWidget {
             onTap: () {
               Navigator.pushNamed(context, 'HomePage');
             },
-            child: Icon(
+            child: const Icon(
               Icons.home,
               size: 30,
               color: Colors.white,
@@ -32,7 +32,7 @@ class CustomNavBar extends StatelessWidget {
             onTap: () {
               Navigator.pushNamed(context, 'CategoryPage');
             },
-            child: Icon(
+            child: const Icon(
               Icons.category,
               size: 30,
               color: Colors.white,
@@ -40,7 +40,7 @@ class CustomNavBar extends StatelessWidget {
           ),
           InkWell(
             onTap: () {},
-            child: Icon(
+            child: const Icon(
               Icons.favorite_border,
               size: 30,
               color: Colors.white,
@@ -48,7 +48,7 @@ class CustomNavBar extends StatelessWidget {
           ),
           InkWell(
             onTap: () {},
-            child: Icon(
+            child: const Icon(
               Icons.person,
               size: 30,
               color: Colors.white,

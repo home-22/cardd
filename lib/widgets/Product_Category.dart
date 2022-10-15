@@ -15,11 +15,12 @@ class ProductCategory extends StatelessWidget {
               height: 120,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
-                color: Colors.white,
+                color: Color(0xFF292B37),
                 boxShadow: const [
                   BoxShadow(
+                    color: Color(0xFF292B37),
                     blurRadius: 1,
-                    spreadRadius: 1,
+                    spreadRadius: 5,
                   ),
                 ],
               ),

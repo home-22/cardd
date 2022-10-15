@@ -8,6 +8,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF292B37),
       body: Padding(
         padding: const EdgeInsets.all(30),
         child: Center(
@@ -27,9 +28,13 @@ class LoginPage extends StatelessWidget {
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
                     labelText: 'Enter Email',
+                    labelStyle: const TextStyle(color: Colors.white),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20)),
-                    prefixIcon: const Icon(Icons.email),
+                    prefixIcon: const Icon(
+                      Icons.email,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 40),
@@ -37,10 +42,17 @@ class LoginPage extends StatelessWidget {
                   keyboardType: TextInputType.visiblePassword,
                   decoration: InputDecoration(
                       labelText: 'Enter Password',
+                      labelStyle: const TextStyle(color: Colors.white),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20)),
-                      prefixIcon: const Icon(Icons.lock),
-                      suffixIcon: const Icon(Icons.remove_red_eye)),
+                      prefixIcon: const Icon(
+                        Icons.lock,
+                        color: Colors.white,
+                      ),
+                      suffixIcon: const Icon(
+                        Icons.remove_red_eye,
+                        color: Colors.white54,
+                      )),
                 ),
                 const SizedBox(height: 10),
                 Row(
@@ -48,7 +60,10 @@ class LoginPage extends StatelessWidget {
                   children: [
                     TextButton(
                       onPressed: () {},
-                      child: const Text('Forget Password?'),
+                      child: const Text(
+                        'Forget Password?',
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ],
                 ),
@@ -64,7 +79,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   child: MaterialButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, 'WelcomeScreen');
+                      Navigator.pushNamed(context, 'HomePage');
                     },
                     child: const Text(
                       'LOGIN',
@@ -77,13 +92,13 @@ class LoginPage extends StatelessWidget {
                   child: Icon(
                     Icons.fingerprint,
                     size: 50,
-                    color: Colors.lightGreen,
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(height: 10),
                 const Divider(
                   height: 20,
-                  color: Colors.black,
+                  color: Colors.white,
                 ),
                 const SizedBox(height: 10),
                 Row(
@@ -93,12 +108,15 @@ class LoginPage extends StatelessWidget {
                       onPressed: () {},
                       child: const Text(
                         'Don t have an Account?',
-                        style: TextStyle(color: Colors.grey),
+                        style: TextStyle(color: Colors.white),
                       ),
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: const Text('Register Account?'),
+                      child: const Text(
+                        'Register Account?',
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ],
                 ),

@@ -16,15 +16,16 @@ class ProductCard extends StatelessWidget {
               },
               child: Container(
                 margin: const EdgeInsets.only(top: 10, bottom: 10, left: 10),
-                height: 110,
+                height: 120,
                 width: 250,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
-                  color: Colors.white,
-                  boxShadow: const [
+                  color: Color(0xFF292B37),
+                  boxShadow: [
                     BoxShadow(
+                      color: const Color(0xFF292B37).withOpacity(0.4),
                       blurRadius: 1,
-                      spreadRadius: 1,
+                      spreadRadius: 5,
                     ),
                   ],
                 ),

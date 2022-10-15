@@ -52,10 +52,11 @@ class HomePage extends StatelessWidget {
                     ),
                     Container(
                       padding: const EdgeInsets.all(10),
-                      height: 40,
+                      height: 60,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Colors.white),
+                        borderRadius: BorderRadius.circular(20),
+                        color: const Color(0xFF292B37),
+                      ),
                       child: Row(
                         children: [
                           const Icon(
@@ -63,9 +64,17 @@ class HomePage extends StatelessWidget {
                             size: 30,
                             color: Colors.white,
                           ),
-                          SizedBox(
+                          Container(
                             width: 250,
-                            child: TextFormField(),
+                            margin: const EdgeInsets.only(left: 5),
+                            child: TextFormField(
+                              style: const TextStyle(color: Colors.white),
+                              decoration: const InputDecoration(
+                                border: InputBorder.none,
+                                hintText: 'Search',
+                                helperStyle: TextStyle(color: Colors.white54),
+                              ),
+                            ),
                           ),
                         ],
                       ),

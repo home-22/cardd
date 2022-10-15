@@ -5,41 +5,48 @@ class AllItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      crossAxisCount: 2,
-      childAspectRatio: 2.0,
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      children: [
-        for (int i = 1; i < 5; i++)
-          Container(
-            padding: const EdgeInsets.only(left: 10, right: 10),
-            margin: const EdgeInsets.all(5),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(40),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.amber.withOpacity(0.5),
-                  blurRadius: 1,
-                  spreadRadius: 1,
-                ),
-              ],
-            ),
-            child: Row(
-              children: [
-                Padding(
-                    padding: const EdgeInsets.all(5),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(30),
-                      child: Image.asset(
-                        'images/1.png',
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          for (int i = 1; i < 10; i++)
+            InkWell(
+              onTap: () {},
+              child: Container(
+                width: 140,
+                height: 230,
+                margin: EdgeInsets.only(left: 10),
+                decoration: BoxDecoration(
+                    color: Color(0xFF292B37),
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Color(0xFF292B37).withOpacity(0.4),
+                        spreadRadius: 5,
+                        blurRadius: 4,
+                      )
+                    ]),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(10),
+                        topRight: Radius.circular(10),
                       ),
-                    )),
-              ],
-            ),
-          ),
-      ],
+                      child: Image.asset(
+                        'images/3.png',
+                        width: 200,
+                        height: 200,
+                        fit: BoxFit.cover,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
+        ],
+      ),
     );
   }
 }

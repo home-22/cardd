@@ -17,7 +17,11 @@ class ShoppingCard extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: const Icon(Icons.arrow_back_ios),
+                    child: const Icon(
+                      Icons.arrow_back_ios,
+                      color: Colors.white,
+                      size: 30,
+                    ),
                   ),
                 ],
               ),
@@ -62,11 +66,11 @@ class ShoppingCard extends StatelessWidget {
                     children: const [
                       Text(
                         'See All',
-                        style: TextStyle(fontSize: 28, color: Colors.blue),
+                        style: TextStyle(fontSize: 28, color: Colors.white),
                       ),
                       Text(
                         '\$455',
-                        style: TextStyle(fontSize: 28, color: Colors.blue),
+                        style: TextStyle(fontSize: 28, color: Colors.white),
                       )
                     ],
                   )

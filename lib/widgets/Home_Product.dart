@@ -1,6 +1,4 @@
-
 import 'package:flutter/material.dart';
-
 
 class HomeProduct extends StatelessWidget {
   const HomeProduct({Key? key}) : super(key: key);
@@ -17,12 +15,12 @@ class HomeProduct extends StatelessWidget {
               height: 110,
               width: 250,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100),
-                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                color: Color(0xFF292B37).withOpacity(0.4),
                 boxShadow: const [
                   BoxShadow(
                     blurRadius: 1,
-                    spreadRadius: 1,
+                    spreadRadius: 5,
                   ),
                 ],
               ),
@@ -31,14 +29,9 @@ class HomeProduct extends StatelessWidget {
                   Padding(
                       padding: const EdgeInsets.all(8),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(10),
                         child: Image.asset('images/3.png'),
                       )),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [Text('Redmi note 11 Pro \5')],
-                  )
                 ],
               ),
             ),
