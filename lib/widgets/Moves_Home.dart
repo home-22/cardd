@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AllItems extends StatelessWidget {
-  const AllItems({Key? key}) : super(key: key);
+class MovesHome extends StatelessWidget {
+  const MovesHome({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +15,13 @@ class AllItems extends StatelessWidget {
               child: Container(
                 width: 140,
                 height: 230,
-                margin: EdgeInsets.only(left: 10),
+                margin: const EdgeInsets.only(left: 10),
                 decoration: BoxDecoration(
-                    color: Color(0xFF292B37),
+                    color: const Color(0xFF292B37),
                     borderRadius: BorderRadius.circular(10),
                     boxShadow: [
                       BoxShadow(
-                        color: Color(0xFF292B37).withOpacity(0.4),
+                        color: const Color(0xFF292B37).withOpacity(0.4),
                         spreadRadius: 5,
                         blurRadius: 4,
                       )
@@ -30,7 +30,7 @@ class AllItems extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(10),
                         topRight: Radius.circular(10),
                       ),

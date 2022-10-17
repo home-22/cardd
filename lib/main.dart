@@ -1,8 +1,6 @@
 import 'package:cardd/pages/Category_Page.dart';
 import 'package:cardd/pages/Home_Page.dart';
 import 'package:cardd/pages/Login_Page.dart';
-import 'package:cardd/pages/Settings_Page.dart';
-import 'package:cardd/widgets/Shopping_Card.dart';
 
 import 'package:flutter/material.dart';
 
@@ -23,7 +21,6 @@ class MyApp extends StatelessWidget {
         '/': (context) => const LoginPage(),
         'HomePage': (context) => const HomePage(),
         'CategoryPage': (context) => const CategoryPage(),
-        'ShoppingCard': (context) => const ShoppingCard(),
       },
     );
   }

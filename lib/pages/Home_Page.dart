@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables
 
-import 'package:cardd/widgets/All_Items.dart';
+import 'package:cardd/widgets/Moves_Home.dart';
 import 'package:cardd/widgets/CustomNavBar.dart';
-import 'package:cardd/widgets/Home_Product.dart';
-import 'package:cardd/widgets/Product_Card.dart';
+
+import 'package:cardd/widgets/Upcoming.dart';
 
 import 'package:flutter/material.dart';
 
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
                               decoration: const InputDecoration(
                                 border: InputBorder.none,
                                 hintText: 'Search',
-                                helperStyle: TextStyle(color: Colors.white54),
+                                hintStyle: TextStyle(color: Colors.white),
                               ),
                             ),
                           ),
@@ -89,38 +89,15 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Padding(
-                    padding: EdgeInsets.all(10),
-                    child: Text(
-                      'New new',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(10),
-                    child: Icon(
-                      Icons.ios_share,
-                      size: 30,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-              const ProductCard(),
+           
+              const Upcoming(),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                 child: Row(
                   children: [
                     const Text(
-                      'New ',
+                      'Movies ',
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.white,
@@ -129,33 +106,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              const AllItems(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                    child: Text(
-                      'New New new',
-                      style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                    child: Text(
-                      'See All',
-                      style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.white54,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                ],
-              ),
-              const HomeProduct(),
+              const MovesHome(),
             ],
           ),
         ),
