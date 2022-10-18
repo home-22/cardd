@@ -8,7 +8,7 @@ class Upcoming extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
@@ -34,23 +34,24 @@ class Upcoming extends StatelessWidget {
             ],
           ),
         ),
+        const SizedBox(height: 15),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
-              for (int i = 1; i < 5; i++)
+              for (int i = 1; i < 4; i++)
                 Padding(
                   padding: const EdgeInsets.only(left: 10),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: Image.asset(
-                      'images/1.png',
+                      'images/$i.jpg',
                       height: 190,
                       width: 300,
                       fit: BoxFit.cover,
                     ),
                   ),
-                )
+                ),
             ],
           ),
         ),

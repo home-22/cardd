@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:cardd/widgets/CustomNavBar.dart';
 import 'package:flutter/material.dart';
 
@@ -54,9 +52,9 @@ class CategoryPage extends StatelessWidget {
                             ClipRRect(
                               borderRadius: BorderRadius.circular(10),
                               child: Image.asset(
-                                'images/1.png',
-                                height: 80,
-                                width: 100,
+                                'images/$i.jpg',
+                                height: 70,
+                                width: 90,
                                 fit: BoxFit.cover,
                               ),
                             ),

@@ -1,7 +1,5 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables
-
-import 'package:cardd/widgets/Moves_Home.dart';
 import 'package:cardd/widgets/CustomNavBar.dart';
+import 'package:cardd/widgets/New_Movies.dart';
 
 import 'package:cardd/widgets/Upcoming.dart';
 
@@ -28,7 +26,7 @@ class HomePage extends StatelessWidget {
         title: const Text(
           'Bosna and Hercegovina Sarajevo, 1A',
           style: TextStyle(
-            fontSize: 19,
+            fontSize: 18,
             color: Colors.white,
             fontWeight: FontWeight.w500,
           ),
@@ -89,24 +87,9 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-           
               const Upcoming(),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-                child: Row(
-                  children: [
-                    const Text(
-                      'Movies ',
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    )
-                  ],
-                ),
-              ),
-              const MovesHome(),
+              const SizedBox(height: 10),
+              const NewMovies(),
             ],
           ),
         ),

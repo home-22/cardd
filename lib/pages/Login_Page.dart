@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  'LOGIFOY',
+                  'LOGIFOY MOVIES',
                   style: TextStyle(
                       fontSize: 50,
                       color: Colors.red,
