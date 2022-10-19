@@ -1,6 +1,7 @@
 import 'package:cardd/pages/Category_Page.dart';
 import 'package:cardd/pages/Home_Page.dart';
 import 'package:cardd/pages/Login_Page.dart';
+import 'package:cardd/pages/Move_Page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const LoginPage(),
         'HomePage': (context) => const HomePage(),
         'CategoryPage': (context) => const CategoryPage(),
+        'MovePage': (context) => const MovePage(),
       },
     );
   }

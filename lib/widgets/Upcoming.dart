@@ -13,12 +13,12 @@ class Upcoming extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.all(5),
                 child: Text(
                   'Upcoming Movies',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -40,15 +40,20 @@ class Upcoming extends StatelessWidget {
           child: Row(
             children: [
               for (int i = 1; i < 4; i++)
-                Padding(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Image.asset(
-                      'images/$i.jpg',
-                      height: 190,
-                      width: 300,
-                      fit: BoxFit.cover,
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, 'MovePage');
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15),
+                      child: Image.asset(
+                        'images/$i.jpg',
+                        height: 190,
+                        width: 300,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),

@@ -1,3 +1,4 @@
+import 'package:cardd/pages/Move_Page.dart';
 import 'package:flutter/material.dart';
 
 class NewMovies extends StatelessWidget {
@@ -12,12 +13,15 @@ class NewMovies extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              Text(
-                'New Movies',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontWeight: FontWeight.w500),
+              Padding(
+                padding: EdgeInsets.all(5),
+                child: Text(
+                  'New Movies',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold),
+                ),
               ),
               Text(
                 'See All',
@@ -33,7 +37,9 @@ class NewMovies extends StatelessWidget {
             children: [
               for (int i = 1; i < 11; i++)
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, 'MovePage');
+                  },
                   child: Container(
                     width: 150,
                     height: 250,
@@ -44,8 +50,8 @@ class NewMovies extends StatelessWidget {
                         boxShadow: [
                           BoxShadow(
                             color: const Color(0xFF292B37).withOpacity(0.4),
-                            spreadRadius: 5,
-                            blurRadius: 4,
+                            spreadRadius: 6,
+                            blurRadius: 2,
                           )
                         ]),
                     child: Column(
