@@ -1,12 +1,11 @@
 // ignore_for_file: file_names
 
-import 'package:cardd/widgets/List_TextName.dart';
+import 'package:cardd/widgets/New_Movies_List.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class NewMovies extends StatelessWidget {
-  NewMovies({Key? key}) : super(key: key);
-  // ignore: non_constant_identifier_names
+  const NewMovies({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +99,7 @@ class NewMovies extends StatelessWidget {
                                   ),
                                   SizedBox(
                                     height: 25,
-                                    child: TextName[i++],
+                                    child: TextName[i],
                                   ),
                                 ],
                               ),

@@ -92,7 +92,7 @@ class HomePage extends StatelessWidget {
               const SizedBox(height: 30),
               const Upcoming(),
               const SizedBox(height: 40),
-               NewMovies(),
+              const NewMovies(),
             ],
           ),
         ),

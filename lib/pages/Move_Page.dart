@@ -16,7 +16,7 @@ class MovePage extends StatelessWidget {
           Opacity(
             opacity: 0.5,
             child: Image.asset(
-              'images/1.jpg',
+              'images/3.jpg',
               width: double.infinity,
               height: 300,
               fit: BoxFit.cover,
@@ -112,7 +112,7 @@ class MovePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Text(
-                          'Doctor Strange 3',
+                          'UNCHARTED',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 30,
