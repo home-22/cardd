@@ -2,15 +2,20 @@
 
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF292B37),
       body: Padding(
-        padding: const EdgeInsets.all(30),
+        padding: const EdgeInsets.all(10),
         child: Center(
           child: SingleChildScrollView(
             child: Column(
@@ -23,7 +28,7 @@ class LoginPage extends StatelessWidget {
                       color: Colors.red,
                       fontWeight: FontWeight.w900),
                 ),
-                const SizedBox(height: 50),
+                const SizedBox(height: 40),
                 TextFormField(
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
@@ -37,7 +42,7 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 40),
+                const SizedBox(height: 30),
                 TextFormField(
                   keyboardType: TextInputType.visiblePassword,
                   decoration: InputDecoration(
@@ -69,7 +74,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Container(
-                  height: 60,
+                  height: 50,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),

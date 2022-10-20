@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:cardd/widgets/CustomNavBar.dart';
 import 'package:cardd/widgets/New_Movies.dart';
 
@@ -24,11 +26,11 @@ class HomePage extends StatelessWidget {
         ),
         centerTitle: true,
         title: const Text(
-          'Bosna and Hercegovina Sarajevo, 1A',
+          'Bosna and Hercegovina Sarajevo',
           style: TextStyle(
-            fontSize: 18,
+            fontSize: 15,
             color: Colors.white,
-            fontWeight: FontWeight.w500,
+            fontWeight: FontWeight.w400,
           ),
         ),
       ),
@@ -50,7 +52,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Container(
                       padding: const EdgeInsets.all(10),
-                      height: 60,
+                      height: 50,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         color: const Color(0xFF292B37),
@@ -63,7 +65,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.white,
                           ),
                           Container(
-                            width: 250,
+                            width: 180,
                             margin: const EdgeInsets.only(left: 5),
                             child: TextFormField(
                               style: const TextStyle(color: Colors.white),
@@ -87,10 +89,10 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               const Upcoming(),
               const SizedBox(height: 40),
-              const NewMovies(),
+               NewMovies(),
             ],
           ),
         ),

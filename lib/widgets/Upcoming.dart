@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class Upcoming extends StatelessWidget {
@@ -24,13 +26,11 @@ class Upcoming extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.all(10),
-                child: Icon(
-                  Icons.ios_share,
-                  size: 30,
-                  color: Colors.white,
-                ),
-              ),
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    'See All',
+                    style: TextStyle(fontSize: 18, color: Colors.white54),
+                  )),
             ],
           ),
         ),

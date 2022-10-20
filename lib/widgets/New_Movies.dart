@@ -1,8 +1,12 @@
-import 'package:cardd/pages/Move_Page.dart';
+// ignore_for_file: file_names
+
+import 'package:cardd/widgets/List_TextName.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class NewMovies extends StatelessWidget {
-  const NewMovies({Key? key}) : super(key: key);
+  NewMovies({Key? key}) : super(key: key);
+  // ignore: non_constant_identifier_names
 
   @override
   Widget build(BuildContext context) {
@@ -75,29 +79,28 @@ class NewMovies extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 'Move Title Here',
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 18,
                                     fontWeight: FontWeight.w400),
                               ),
-                              SizedBox(height: 5),
-                              Text(
+                              const SizedBox(height: 5),
+                              const Text(
                                 'Action/Aventure',
                                 style: TextStyle(color: Colors.white54),
                               ),
-                              SizedBox(height: 7),
+                              const SizedBox(height: 7),
                               Row(
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.star,
                                     color: Colors.amber,
                                   ),
-                                  Text(
-                                    '8.5',
-                                    style: TextStyle(
-                                        color: Colors.white54, fontSize: 18),
+                                  SizedBox(
+                                    height: 25,
+                                    child: TextName[i++],
                                   ),
                                 ],
                               ),

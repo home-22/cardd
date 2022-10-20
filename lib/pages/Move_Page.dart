@@ -1,11 +1,9 @@
-import 'dart:ui';
+// ignore_for_file: file_names
 
 import 'package:cardd/widgets/CustomNavBar.dart';
-import 'package:cardd/widgets/Move_PageButtons.dart';
+import 'package:cardd/widgets/Move_Page_Buttons.dart';
 import 'package:cardd/widgets/Recommend_Move.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class MovePage extends StatelessWidget {
   const MovePage({Key? key}) : super(key: key);
@@ -29,7 +27,8 @@ class MovePage extends StatelessWidget {
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 25),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -37,7 +36,7 @@ class MovePage extends StatelessWidget {
                           onTap: () {
                             Navigator.pop(context);
                           },
-                          child: Icon(
+                          child: const Icon(
                             Icons.arrow_back_ios,
                             size: 30,
                             color: Colors.white,
@@ -45,7 +44,7 @@ class MovePage extends StatelessWidget {
                         ),
                         InkWell(
                           onTap: () {},
-                          child: Icon(
+                          child: const Icon(
                             Icons.favorite_border,
                             color: Colors.white,
                             size: 35,
@@ -54,9 +53,9 @@ class MovePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 60),
+                  const SizedBox(height: 60),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -81,7 +80,7 @@ class MovePage extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(right: 40, top: 40),
+                          margin: const EdgeInsets.only(right: 40, top: 40),
                           height: 80,
                           width: 80,
                           decoration: BoxDecoration(
@@ -95,7 +94,7 @@ class MovePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.play_arrow,
                             color: Colors.white,
                             size: 60,
@@ -105,7 +104,7 @@ class MovePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 30),
-                  MovePageButtons(),
+                  const MovePageButtons(),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         vertical: 20, horizontal: 10),
@@ -121,7 +120,7 @@ class MovePage extends StatelessWidget {
                         ),
                         SizedBox(height: 15),
                         Text(
-                          'This is the sample description of the movie, you can write here the description of the movie. you can write here the description of the movie.',
+                          'This is the sample description of the movie, you can write here the description of the movie. you can write here the description of the movie.This is the sample description of the movie, you can write here the description of the movie.',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 15,
@@ -132,14 +131,14 @@ class MovePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  RecommendMove()
+                  const RecommendMove()
                 ],
               ),
             ),
           )
         ],
       ),
-      bottomNavigationBar: CustomNavBar(),
+      bottomNavigationBar: const CustomNavBar(),
     );
   }
 }
